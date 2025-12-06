@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+  jpa:
+    show-sql: false
+
+build:
+  version: 0.0.3
