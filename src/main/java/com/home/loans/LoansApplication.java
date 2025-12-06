@@ -34,7 +34,7 @@ public class LoansApplication implements CommandLineRunner {
         SpringApplication.run(LoansApplication.class, args);
     }
 
-    @Value("${build.version}")
+    @Value("${build.version:NotFound}")
     private String buildVersion;
 
     @Override
