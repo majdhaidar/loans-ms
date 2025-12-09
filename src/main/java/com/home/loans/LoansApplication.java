@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
@@ -28,6 +29,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
                 )
         )
 )
+@RefreshScope
 public class LoansApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
